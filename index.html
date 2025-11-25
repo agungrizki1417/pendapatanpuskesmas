@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <!-- Meta refresh fallback (0 detik) -->
+  <meta http-equiv="refresh" content="0; url=https://script.google.com/macros/s/AKfycbyimuMOtzQXKQ8lVB94ZSahTEGHsnHaQWbeBFgbshhjI3C-EOqlXls2iTPC-eyB0QMu/exec">
+
+  <title>Redirecting…</title>
+
+  <style>
+    /* Tampilan minimal saat redirect */
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+      background: #f7fafc;
+      color: #111827;
+      text-align: center;
+      padding: 1rem;
+    }
+    .card {
+      max-width: 720px;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+      background: white;
+    }
+    a { color: #2563eb; text-decoration: none; }
+  </style>
+
+  <script>
+    // JavaScript redirect menggunakan replace() agar tidak meninggalkan history
+    (function () {
+      var target = "https://script.google.com/macros/s/AKfycbyimuMOtzQXKQ8lVB94ZSahTEGHsnHaQWbeBFgbshhjI3C-EOqlXls2iTPC-eyB0QMu/exec";
+      // Jika window.location sudah tersedia, lakukan redirect sekarang
+      try {
+        window.location.replace(target);
+      } catch (e) {
+        // jika error, fallback ke setting meta refresh yang sudah ada
+        console.warn("Redirect failed, using meta refresh fallback.", e);
+      }
+    })();
+  </script>
+</head>
+<body>
+  <div class="card">
+    <h1>Mengarahkan ke Google Apps Script…</h1>
+    <p>Jika halaman tidak otomatis mengarah, klik tautan berikut:</p>
+    <p><a href="https://script.google.com/macros/s/AKfycbyimuMOtzQXKQ8lVB94ZSahTEGHsnHaQWbeBFgbshhjI3C-EOqlXls2iTPC-eyB0QMu/exec" rel="noopener" target="_blank">Buka Google Apps Script</a></p>
+  </div>
+</body>
+</html>
